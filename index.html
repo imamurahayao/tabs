@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <!--デバイスに合わせたWebページの横幅を表示-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">　
+    <link rel="stylesheet" href="CSS/style.css">
+    <!--レスポンシブ用のCSS-->
+    <link rel="stylesheet" href="CSS/responsive.css"> 
+    <!--jQuery UI tabs用のCSS-->
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">　
+    <!--スライダープラグインslick用のCSS-->
+    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css">　
+    <!--スライダープラグインslick用のCSS-->
+    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css">　
+    <title>サンプルサイト</title>
+</head>
+
+<body>
+    <div class="containar">
+        <header>
+            <h1>北九州市の観光地</h1>
+        </header>
+
+        <div class="start">
+            <p>概要</p>
+            <p>このサイトは、jQueryのスライダープラグインslickを使い自動と手動でスライドするようにしました。</p>
+            <p>それと、jQueryのUI tabsを使いタブ中身(区ごとの観光地の内容)のhtmlファイルをページ移動せずに取得している。</p>
+        </div>
+
+        <!--スライド用の画像を入れる-->
+        <ul class="slider">
+            <li><a class="a" href="http://www.kitakyushu-stadium.jp/" target="_blank"><img class="img center" src="image/soccer.jpg" alt="サッカー場"></a></li>
+            <li><a class="a" href="http://www.retro-line.net" target="_blank"><img class="img center" src="image/shiokaze.jpg" alt="潮風号"></a></li>
+            <li><a class="a" href="http://www.sarakurayama-cablecar.co.jp/" target="_blank"><img class="img center" src="image/sarakura.jpg" alt="皿倉山"></a></li>
+            <li><a class="a" href="http://www.kpfmmf.jp/hibiki_animal_world/" target="_blank"> <img class="img center" src="image/kangaru.JPG" alt="ひびき動物ワールド"></a></li>
+        </ul>
+
+        <!--タブ-->
+        <div id="tabs">
+            <ul class="ul">
+                <li class="tab"><a href="#main">小倉北区</a></li>
+                <li class="tab"><a href="tabs/km.html">小倉南区</a></li>
+                <li class="tab"><a href="tabs/mj.html">門司区</a></li>
+                <li class="tab"><a href="tabs/tb.html">戸畑区</a></li>
+                <li class="tab"><a href="tabs/yh.html">八幡東区</a></li>
+                <li class="tab"><a href="tabs/yn.html">八幡西区</a></li>
+                <li class="tab"><a href="tabs/wm.html">若松区</a></li>
+            </ul>
+
+            <!--タブの中身　tabsフォルダのhtmlファイルも同じ-->
+            <div id="main" class="main">
+                <h2>小倉北区の観光地</h2>
+
+                <h3>ミクニワールドスタジアム北九州</h3>
+                <div class="display">
+                    <div class="text">
+                        <p>ミクニワールドスタジアム北九州（北九州スタジアム）は、「海ちか・街なか」スタジアムとして2017年3月12日にグランドオープン。
+                            観客席数 約15,300席、最前列の席からタッチライン・ゴールラインまでの距離はわずか８ｍ。
+                            臨場感あふれるダイナミックスタジアムです。</p>
+                        <p>Jリーグやラグビートップリーグなどの試合、小中高生のサッカー・ラグビー大会、グラウンドゴルフ大会、芝生開放に加え、まちににぎわいを生み出す各種イベントなど、市民に夢と感動を提供する施設となっています。
+                        </p>
+                    </div>
+                    <a class="a" href="http://www.kitakyushu-stadium.jp/" target="_blank"><img class="img" src="image/soccer.jpg" alt="サッカー場">
+                        <p>http://www.kitakyushu-stadium.jp/</p>
+                    </a>
+                </div>
+
+
+                <h3>小倉城</h3>
+                <div class="display">
+                    <div class="text">
+                        <p>1602年、細川忠興公が築城した名城。</p>
+                        <p>4階より5階が大きい天守閣の「唐造り」が特徴であり、建築当時は全国唯一のめずらしいものだった。
+                            ほかにも切り石を使用しない野面積みと呼ばれる石垣や、大手門や槻門など8つの門がある。</p>
+                        <p>さらに城内には小倉城の歴史を紹介する大迫力のシアターや、小倉藩主であった細川氏や小笠原氏の紹介、宮本武蔵と佐々木小次郎の紹介や小倉の街を360度見渡せる展望ゾーンなど見どころ満載。また、春は約300本の桜、秋にはケヤキやイチョウの紅葉が美しいことで知られる。</p>
+                    </div>
+                    <a class="a" href="https://www.kokura-castle.jp/" target="_blank"><img class="img" src="image/kokurajo.jpg" alt="小倉城">
+                        <p>https://www.kokura-castle.jp/</p>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="slick-1.8.1/slick/slick.min.js"></script>
+    <script src="JS/app.js"></script>
+</body></html>
