@@ -1,0 +1,86 @@
+.containar {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/*スライダー*/
+.slider {
+    background-color: #f9c900;
+    padding: 20px 0;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+.arrow {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 10;
+}
+
+.prev {
+
+    left: 0;
+}
+
+.next {
+
+    right: 0;
+}
+
+.ui-tabs-panel {
+    padding: 20px !important; /*!importantは最優先の意味でなるべく使わないこと*/
+    background: linear-gradient(to top, #ff7575 0%, #75baff 100%) !important;
+}
+
+/*タブの中身*/
+h2 {
+    margin: 0;
+    padding-top: 20px;
+}
+
+h3 {
+    margin: 30px 0;
+}
+
+.display {
+    display: flex;
+    justify-content: space-between;
+}
+
+.display:nth-of-type(odd) {
+    flex-direction: row-reverse;
+}
+
+.display:nth-of-type(even) {
+    flex-direction: reverse;
+}
+
+.a,
+.img {
+    max-width: 400px;
+}
+
+
+.text {
+    display: block;
+    max-width: 500px;
+}
+
+.text p {
+    margin-top: 0;
+}
+
+.images {
+    display: block;
+    max-width: 400px;
+}
+
+.images p {
+    margin: 0 0 20px 0;
+}

@@ -1,0 +1,20 @@
+@media screen and (max-width: 767px) {
+    .slider {
+        padding: 0;
+        background: none;
+    }
+
+    .display {
+        display: block;
+
+    }
+
+    .a,
+    .img {
+        width: 100%;
+    }
+
+    .a p {
+        font-size: 95%;
+    }
+}
